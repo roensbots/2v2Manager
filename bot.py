@@ -21,7 +21,7 @@ async def on_message(message):
         userName = message.author
         args = message.content.split(' ', 1)
         print(args)
-        requested = args[1]
+        #requested = args[1]
 
         embed = discord.Embed(title="New 2v2 Request", description="", color=0x42f459)
         embed.add_field(name=userName, value="has requested a 2v2 battle.", inline=False)
