@@ -1,4 +1,4 @@
-# 2v2Manager by Roen Wainscoat
+# Versus by Roen Wainscoat
 
 import discord
 from discord.ext import commands
@@ -17,7 +17,7 @@ async def on_ready():
  
 @client.event
 async def on_message(message):
-    if message.content.upper().startswith('#2V2 REQUEST'):
+    if message.content.upper().startswith('#VERSUS REQUEST'):
         userName = message.author
         args = message.content.split(' ', 1)
         print(args)
@@ -27,9 +27,9 @@ async def on_message(message):
         embed.add_field(name=userName, value="has requested a 2v2 battle.", inline=False)
         await client.send_message(message.channel, embed=embed)
 
-    if message.content.upper().startswith('#2V2 HELP'):
-        embed = discord.Embed(title="2v2Manager Command Guide", description="", color=0x42f459)
-        embed.add_field(name="Bot-specific Prefix", value="#2v2", inline=False)
+    if message.content.upper().startswith('#VERSUS HELP'):
+        embed = discord.Embed(title="VersusManager Command Guide", description="", color=0x659df7)
+        embed.add_field(name="Bot-specific Prefix", value="#versus", inline=False)
         embed.add_field(name="Help", value="$ help", inline=False)
         embed.add_field(name="Request Partner", value="$ request [discord name]", inline=False)
         embed.add_field(name="Cancel Request", value="$ cancel", inline=False)
