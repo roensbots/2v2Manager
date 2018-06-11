@@ -16,4 +16,5 @@ print("reqhandler.py LOADED!")
 async def on_message(message):
     if message.content.upper().startswith('#VERSUS ACCEPT'):
         userID = message.content.id
+        print(userID)
 

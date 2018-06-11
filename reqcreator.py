@@ -11,7 +11,7 @@ commands = commands.Bot(command_prefix="#", case_insensitive=True)
 client = discord.Client()
 
 print("reqcreator.py LOADED!")
- 
+
 @client.event
 async def on_message(message):
     userName = message.author
