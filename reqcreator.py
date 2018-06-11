@@ -1,5 +1,7 @@
 # Versus by Roen Wainscoat
 
+import globalvars
+
 import discord
 from discord.ext import commands
 from discord.ext.commands import bot

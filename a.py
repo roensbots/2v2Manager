@@ -1,5 +1,7 @@
 # Versus by Roen Wainscoat
 
+import globalvars
+
 import reqhandler
 import reqcreator
 
