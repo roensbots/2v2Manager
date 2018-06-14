@@ -5,7 +5,7 @@ from discord.ext import commands
 from discord.ext.commands import bot
 import time
 
-requestCreator = "undefined"
+requestOriginID = "undefined"
 requestResponder = "undefined"
 
 # Usage of Global Variables example for requestCreator:
